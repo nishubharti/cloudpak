@@ -1,0 +1,7 @@
+consoleRoutePrefix:
+  __metadata:
+    label: "Console Route Prefix"
+    description: "Console Route Prefix. The URL for the Cloud Pak for Applications UI will be the Openshift Cluster Console url with this as subdomain."
+    type: "string"
+    required: true
+    default: "ibm-cp-applications"

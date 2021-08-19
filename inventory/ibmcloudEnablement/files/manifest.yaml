@@ -1,0 +1,21 @@
+description: IBM Cloud Pak for Applications IBM Cloud Enablement
+images:
+  - image: icpa-installer:3.0.0.0
+    references:
+      - repository: icpa-installer:3.0.0.0
+        pull-repository: cp.icr.io/cp/icpa/icpa-installer:3.0.0.0
+        pull-authorization:
+          username:
+            env: ENTITLED_REGISTRY_USER
+          password:
+            env: ENTITLED_REGISTRY_KEY
+
+  - image: icpa-landing:3.0.0.0
+    references:
+      - repository: icpa-landing:3.0.0.0
+        pull-repository: cp.icr.io/cp/icpa/icpa-landing:3.0.0.0
+        pull-authorization:
+          username:
+            env: ENTITLED_REGISTRY_USER
+          password:
+            env: ENTITLED_REGISTRY_KEY

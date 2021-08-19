@@ -1,0 +1,19 @@
+roles:
+  roleDefs:
+    clusterAdmin:
+      metadata:
+        name: clusterAdmin
+        displayName: Cluster Admin
+        displayDescription: A user who has cluster administrator permissions.
+
+    namespaceAdmin:
+      metadata:
+        name: namespaceAdmin
+        displayName: Namespace Admin
+        displayDescription: A user who has namespace administrator permissions.
+
+    operator:
+      metadata:
+        name: operator
+        displayName: Cluster Operator
+        displayDescription: A user who has operator permissions.

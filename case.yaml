@@ -1,0 +1,36 @@
+specVersion: 0.0.1
+name: cp-applications
+displayName: "Cloud-Pak Application"
+version: 1.0.0
+appVersion: 1.0.0
+description: "IBM Cloud Pak for Applications - Move from monolithic to microservices with DevOps methodologies and modernization toolkits"
+webPage: https://www.ibm.com/cloud/cloud-pak-for-applications
+supports:
+  architectures:
+    amd64: {}
+    ppc64le: {}
+    s390x: {}
+  k8sDistros:
+    rhocp3: {}
+  managedPlatforms:
+    ibm: {}
+certifications:
+  container: {}
+catalogs:
+  database: {}
+classifications:
+  opensource: {}
+  experimental: {}
+  sample: {}
+icons:
+  - url: https://www.ibm.com/support/knowledgecenter/SSCSJL/images/icp4applications.svg
+    mediaType: image/svg
+organization: "NO-ORG"
+licenses:
+  ipla:
+    ref: LA_en
+    url: "http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?li_formnum=L-CTUR-BF2FY4&title=IBM%20Cloud%20Pak%20for%20Applications%20V3.0%20Update%201"
+    mediaType: text/plain
+    metadata:
+      displayName: IBM Cloud Pak for Applications V3 License
+      displayDescription: IBM Cloud Pak for Applications V3 License

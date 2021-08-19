@@ -1,0 +1,43 @@
+prereqs:
+  prereqDefs:
+    k8sResources:
+      ibmAnyuidHostaccessSCC:
+        kind: SecurityContextConstraints
+        apiGroup: security.openshift.io
+        name: ibm-anyuid-hostaccess-scc
+        version: v1
+
+      ibmAnyuidHostpathSCC:
+        kind: SecurityContextConstraints
+        apiGroup: security.openshift.io
+        name: ibm-anyuid-hostpath-scc
+        version: v1
+
+      ibmAnyuidSCC:
+        kind: SecurityContextConstraints
+        apiGroup: security.openshift.io
+        name: ibm-anyuid-scc
+        version: v1
+
+      ibmRestrictedSCC:
+        kind: SecurityContextConstraints
+        apiGroup: security.openshift.io
+        name: ibm-restricted-scc
+        version: v1
+
+      anyuidSCC:
+        kind: SecurityContextConstraints
+        apiGroup: security.openshift.io
+        name: anyuid
+        version: v1
+
+    k8sResourceVersions:
+      RBAC:                                # boolean: true if present
+        kind: ClusterRole
+        apiGroup: rbac.authorization.k8s.io
+        version: v1
+
+    k8sDistros:                         # Kubernetes Distributions resolver
+      openshift:
+        distribution: openshift
+        semver: ">=3.11"

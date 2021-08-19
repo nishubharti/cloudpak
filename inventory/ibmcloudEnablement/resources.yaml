@@ -1,0 +1,13 @@
+resources:
+  metadata:
+    name: ibmcloudEnablement
+  resourceDefs:
+    files:
+      - ref: preInstall/pre-install.sh
+      - ref: preInstall/README.md
+      - ref: install/install.sh
+      - ref: install/uninstall.sh
+      - ref: install/README.md
+      - ref: install/values-metadata.yaml
+      - ref: manifest.yaml
+        mediaType: application/vnd.case.resource.image.manifest.v1

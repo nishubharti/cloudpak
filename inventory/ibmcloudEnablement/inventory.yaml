@@ -1,0 +1,24 @@
+inventory:
+  metadata:
+    name: ibmcloudEnablement
+    description: IBM Cloud Enablement data including deployment information.
+    com_ibm_deployment:
+      target: ibmcloud
+      description: Installation for IBM Cloud
+      type: roks
+      install_kind: bash
+      pre_install_scope: namespace
+      min_configuration:
+        mem: 13
+        disk: 17
+        cores: 6
+        nodes: 2
+      single_instance: true
+      source_url: https://github.ibm.com/IBMCloudPak4Apps/icpa-case/tree/master/stable/ibm-cp-applications-bundle/case/ibm-cp-applications
+      docs_url: https://cloud.ibm.com/docs/services/cloud-pak-applications?topic=cloud-pak-applications-getting-started
+      iam_roles:
+        install:
+        - Writer
+        pre_install:
+        - Manager
+  k8sScope: cluster
